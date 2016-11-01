@@ -1,6 +1,23 @@
 # redux-react-i18n
 i18n component and reducers for redux
 
+## Short demo
+
+####write:
+```jsx
+<Loc locKey="your_key_1"/>
+<Loc locKey="your_key_2" number={1}/>
+<Loc locKey="your_key_2" number={2}/>
+<Loc locKey="your_key_2" number={5}/>
+```
+####Result
+```html
+<span>Перевод вашего первого ключа из словаря для текущего языка</span>
+<span>Пришла 1 кошечка</span>
+<span>Пришли 2 кошечки</span>
+<span>Пришло 5 кошечек</span>
+```
+
 ### What I'm using:
 pluralizer: ( [github](https://github.com/derzunov/pluralizer) or [npm](https://www.npmjs.com/package/pluralizr) ) for plural forms changing
 
