@@ -1,4 +1,5 @@
-export * as i18nActions from './actions';
+import * as i18nActions from './actions';
+export { i18nActions };
 export { default as i18nReducer } from './reducer'
 
 // You can use the complete scheme of store/reducers/actions proposed by the author
