@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/derzunov/redux-i18n.git"
+    "url": "git+https://github.com/derzunov/redux-react-i18n.git"
   },
   "keywords": [
     "redux",
@@ -29,9 +29,9 @@
   "author": "derzunov <derzunov.work@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/derzunov/redux-i18n/issues"
+    "url": "https://github.com/derzunov/redux-react-i18n/issues"
   },
-  "homepage": "https://github.com/derzunov/redux-i18n#readme",
+  "homepage": "https://github.com/derzunov/redux-react-i18n#readme",
   "dependencies": {
     "react": "^15.3.2",
     "react-redux": "^4.4.5",
