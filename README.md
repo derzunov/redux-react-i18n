@@ -84,7 +84,6 @@ import { LocPresentational } from 'redux-react-i18n';
 ...
 ...
 // Then map data to props => currentLanguage, dictionary (See more in src/Loc.js):
-
 const mapStateToProps = ( { /*getting data from the state*/ }, ownProps ) => ({
     currentLanguage: yourCurrentLanguageFromState,
     dictionary: yourDictionaryFromState
