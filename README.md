@@ -24,6 +24,7 @@ pluralizer: ( [github](https://github.com/derzunov/pluralizer) or [npm](https://
 
 translator: ( [github](https://github.com/derzunov/translator) or [npm](https://www.npmjs.com/package/translatr) ) for translation ([translator demo](https://derzunov.github.io/translator/))
 
+### Install:
 Terminal:
 ```javascript
 npm i 'redux-react-i18n'
