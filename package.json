@@ -1,0 +1,41 @@
+{
+  "name": "redux-react-i18n",
+  "version": "0.0.1",
+  "description": "i18n: component and reducers for redux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "babel src -d lib",
+    "prepublish": "npm run compile"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-react": "^6.16.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derzunov/redux-i18n.git"
+  },
+  "keywords": [
+    "redux",
+    "i18n",
+    "localization",
+    "internationalization",
+    "react",
+    "l10n"
+  ],
+  "author": "derzunov <derzunov.work@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/derzunov/redux-i18n/issues"
+  },
+  "homepage": "https://github.com/derzunov/redux-i18n#readme",
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-redux": "^4.4.5",
+    "redux": "^3.6.0",
+    "translatr": "^0.1.3"
+  }
+}

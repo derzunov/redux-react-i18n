@@ -1,0 +1,12 @@
+.babelrc
+.editorconfig
+.eslintrc
+.gitignore
+.idea
+.npmignore
+.travis.yml
+
+node_modules/
+
+gulpfile.js
+test.js
