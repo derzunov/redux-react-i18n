@@ -56,7 +56,6 @@ const i18n = ( state, action ) => {
                         },
                         'en-US': {
                             'key_1': 'First default key',
-                            // 1 штучка, 3 штучки, пять штучек
                             'key_2': [ '$Count', ' ', ['thing','things']], // 1 thing, 2 things, 153 things
                         }
                     }
