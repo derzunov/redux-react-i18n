@@ -113,4 +113,5 @@ See more in src/\*.js
 2. Different languages (like arabic and chinese) support demo
 3. Different improvements
 4. Pure react-component evolution
-5. ...
+5. Tests
+6. ...
