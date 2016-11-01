@@ -106,3 +106,11 @@ Loc = connect( mapStateToProps )( LocPresentational );
 </p>
 ```
 See more in src/\*.js
+
+
+## Roadmap
+1. Demo project with how-to examples
+2. Different languages (like arabic and chinese) support demo
+3. Different improvements
+4. Pure react-component evolution
+5. ...
