@@ -1,4 +1,5 @@
 import translate from 'translatr';
+import React from 'react';
 
 const Loc = ({ currentLanguage, locKey, number, dictionary }) => {
     return <span>
