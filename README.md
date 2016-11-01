@@ -1,6 +1,11 @@
 # redux-react-i18n
 i18n component and reducers for redux
 
+### What I'm using:
+[pluralizer](https://github.com/derzunov/pluralizer) for plural forms changing
+
+[translator](https://github.com/derzunov/translator) for translation
+
 Terminal:
 ```javascript
 npm i 'redux-react-i18n'
