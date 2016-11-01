@@ -10,7 +10,7 @@ i18n solution for redux/react
 <Loc locKey="your_key_2" number={2}/>
 <Loc locKey="your_key_2" number={5}/>
 ```
-####Result ( html )
+####Result ( html ):
 ```html
 <span>Перевод вашего первого ключа из словаря для текущего языка</span>
 <span>Пришла 1 кошечка</span>
