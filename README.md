@@ -2,9 +2,9 @@
 i18n component and reducers for redux
 
 ### What I'm using:
-[pluralizer](https://github.com/derzunov/pluralizer) for plural forms changing
+pluralizer: ( [github](https://github.com/derzunov/pluralizer) or [npm](https://www.npmjs.com/package/pluralizr) ) for plural forms changing
 
-[translator](https://github.com/derzunov/translator) for translation ([translator demo](https://derzunov.github.io/translator/))
+translator: ( [github](https://github.com/derzunov/translator) or [npm](https://www.npmjs.com/package/translatr) ) for translation ([translator demo](https://derzunov.github.io/translator/))
 
 Terminal:
 ```javascript
