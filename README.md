@@ -1,4 +1,4 @@
-# redux-i18n
+# redux-react-i18n
 i18n component and reducers for redux
 
 Terminal:
