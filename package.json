@@ -1,7 +1,7 @@
 {
   "name": "redux-react-i18n",
-  "version": "0.3.1",
-  "description": "i18n: component and reducers for redux",
+  "version": "0.3.2",
+  "description": "i18n solution for for react-redux",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
