@@ -3,14 +3,14 @@ i18n component and reducers for redux
 
 ## Short demo
 
-####write:
+####Write ( jsx ):
 ```jsx
 <Loc locKey="your_key_1"/>
 <Loc locKey="your_key_2" number={1}/>
 <Loc locKey="your_key_2" number={2}/>
 <Loc locKey="your_key_2" number={5}/>
 ```
-####Result
+####Result ( html )
 ```html
 <span>Перевод вашего первого ключа из словаря для текущего языка</span>
 <span>Пришла 1 кошечка</span>
