@@ -15,7 +15,7 @@ import { i18nReducer, i18nActions, Loc } from 'redux-react-i18n';
 reducers.i18n = i18nReducer;
 ...
 
-const store = createStore( combineReducers(reducers);
+const store = createStore( combineReducers( reducers ) );
 
 ...
 // Set dictionaries (simpliest exapmple) -----------------------------------------------------------------------------------------------
@@ -82,7 +82,15 @@ import { Loc } from 'redux-react-i18n';
 import { LocPresentational } from 'redux-react-i18n';
 ...
 
-// Then map data to props => currentLanguage, dictionary
+// Then map data to props => currentLanguage, dictionary (See more in src/Loc.js):
+
+const mapStateToProps = ( { /*getting data from the state*/ }, ownProps ) => ({
+    currentLanguage: yourCurrentLanguageFromState,
+    dictionary: yourDictionaryFromState
+});
+Loc = connect( mapStateToProps )( LocPresentational );
+
+...
 
 <p>
   <Loc locKey="YOUR_KEY_1"/>
@@ -91,3 +99,5 @@ import { LocPresentational } from 'redux-react-i18n';
 <p>
   <Loc locKey="YOUR_KEY_2"  number={42}/>
 </p>
+```
+See more in src/\*.js
