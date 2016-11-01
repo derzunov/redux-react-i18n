@@ -5,9 +5,8 @@ import { connect } from 'react-redux';
 import Loc from './LocPresentational';
 
 // The component expects that reducer will be named as i18n
-const mapStateToProps = ( { i18n: { currentLanguage, dictionaries } }, { locKey, number } ) => ({
+const mapStateToProps = ( { i18n: { currentLanguage, dictionaries } }, ownProps ) => ({
     currentLanguage,
-    locKey,
     dictionary: dictionaries[ currentLanguage ]
 });
 
