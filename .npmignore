@@ -10,3 +10,4 @@ node_modules/
 
 gulpfile.js
 test.js
+./index.html
