@@ -16,7 +16,7 @@ i18n solution for redux/react
 - key with pluralization demo
 
 ```
-npm i redux-react-i18n
+git clone https://github.com/derzunov/redux-react-i18n redux-react-i18n
 cd redux-react-i18n/example
 npm i
 ```
