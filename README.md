@@ -1,7 +1,35 @@
 # redux-react-i18n
 i18n solution for redux/react
 
-## Short demo
+## Example Demo
+
+[derzunov.github.io/redux-react-i18n](https://derzunov.github.io/redux-react-i18n/)
+
+### What's in demo?
+- webpack/gulp dev/prod build system
+- languages:
+   * English
+   * Russian
+   * ...
+- language switcher component
+- simple key demo
+- key with pluralization demo
+
+```
+npm i redux-react-i18n
+cd redux-react-i18n/example
+npm i
+```
+and then
+```
+gulp
+```
+or
+```
+gulp prod
+```
+
+## Short code demo
 
 ####Write ( jsx ):
 ```jsx
