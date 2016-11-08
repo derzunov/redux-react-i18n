@@ -1,6 +1,6 @@
 {
   "name": "redux-react-i18n",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "i18n solution for react/redux",
   "main": "lib/index.js",
   "scripts": {
