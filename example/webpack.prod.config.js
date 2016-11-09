@@ -18,10 +18,7 @@ module.exports = {
             {
                 exclude: /( node_modules|bower_components )/,
                 loader: 'babel',
-                test: /\.js$/,
-                query: {
-                    presets: [ 'es2015', 'es2016', 'stage-0', 'react' ]
-                }
+                test: /\.js$/
             }
         ]
     },

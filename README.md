@@ -17,7 +17,6 @@ i18n solution for redux/react
 
 ```
 git clone https://github.com/derzunov/redux-react-i18n redux-react-i18n
-npm i
 cd redux-react-i18n/example
 npm i
 ```
