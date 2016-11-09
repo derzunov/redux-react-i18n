@@ -154,6 +154,10 @@ Loc = connect( mapStateToProps )( LocPresentational );
 ```
 See more in src/\*.js
 
+## Workers of all countries, unite!
+
+<img src='https://raw.githubusercontent.com/derzunov/redux-react-i18n/master/i18n-logo.jpg' alt='Redux Logo' width='100%'>
+
 
 ## Roadmap
 1. Demo project with how-to examples
