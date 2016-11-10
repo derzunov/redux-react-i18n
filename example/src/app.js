@@ -36,6 +36,14 @@ store.dispatch( i18nActions.setLanguages(
         {
             code: 'en-US',
             name: 'English (USA)'
+        },
+        {
+            code: 'pl',
+            name: 'Polish'
+        },
+        {
+            code: 'fr',
+            name: 'French'
         }
     ]
 ) );
