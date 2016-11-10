@@ -1,5 +1,5 @@
 # redux-react-i18n
-i18n solution for redux/react
+An i18n solution for redux/react
 
 ## Example Demo
 
