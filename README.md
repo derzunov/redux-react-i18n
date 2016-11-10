@@ -160,6 +160,19 @@ See more in src/\*.js
 
 <img src='https://raw.githubusercontent.com/derzunov/redux-react-i18n/master/i18n-logo.jpg' alt='Redux Logo' width='100%'>
 
+### Supported languages list with expected codes for pluralize mechanics switching
+- Russian ( ru, ru-RU )
+- English ( en, en-US, en-UK )
+- French ( fr )
+- German ( de )
+- Polish ( pl )
+- Czech ( cs )
+- Portuguese ( pt )
+- Brazilian Portuguese ( pt-BR, br )
+- Arabic ( ar-AR, ar )
+- Turkish ( tr )
+- Occitan ( oc )
+- ...
 
 ## Roadmap
 1. Demo project with how-to examples
