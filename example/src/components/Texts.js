@@ -8,8 +8,15 @@ const mapStateToProps = ({ form: { countForm: {values: {count}} } }, ownProps ) 
 
 const Texts = ({ count }) => {
     return <div className='texts'>
-                <p><Loc locKey="key_1"/></p>
-                <p><Loc locKey="key_2" number={count}/></p>
+                <p>
+                    <h3><Loc locKey="key_1"/></h3>
+                </p>
+                <p>
+                    <h3 style={{color: "red"}}><Loc locKey="key_2" number={count}/></h3>
+                </p>
+                <p>
+                    <h3><Loc locKey="key_3" number={count}/></h3>
+                </p>
     </div>;
 };
 

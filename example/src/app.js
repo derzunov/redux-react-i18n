@@ -45,22 +45,26 @@ store.dispatch( i18nActions.setDictionaries(
         'ru-RU':
             {
                 'key_1': 'Первый дефолтный ключ из установленного нами словаря',
-                'key_2': [ [ "Остался", "Осталось", "Осталось" ],  " ", "$count", " ", [ "час", "часа", "часов" ] ]
+                'key_2': [ [ "Остался", "Осталось", "Осталось" ],  " ", "$count", " ", [ "час", "часа", "часов" ] ],
+                'key_3': 'Просто число после двоеточия: $Count'
             },
         'en-US':
             {
                 'key_1': 'First default key from our dictionary',
-                'key_2': ["$count", " ", [ "hour", "hours"] ]
+                'key_2': ["$count", " ", [ "hour", "hours"] ],
+                'key_3': 'Number: $Count'
             },
         'pl':
             {
                 'key_1': 'Prosze, dwa bilety drugiej klasy do Warszawy.',
-                'key_2': [[ "Pozostała", "Pozostały", "Pozostało" ], " ", "$count", " ", [ "godzina", "godziny", "godzin" ] ]
+                'key_2': [[ "Pozostała", "Pozostały", "Pozostało" ], " ", "$count", " ", [ "godzina", "godziny", "godzin" ] ],
+                'key_3': 'Numer: $Count'
             },
         'fr':
             {
                 'key_1': 'Ayant risqué une fois-on peut rester heureux toute la vie',
-                'key_2': ["$count", " ", [ "heure", "heures"], " ", [ "restante", "restantes"] ]
+                'key_2': ["$count", " ", [ "heure", "heures"], " ", [ "restante", "restantes"] ],
+                'key_3': 'Nombre: $Count'
             }
     }
 ) );
