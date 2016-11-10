@@ -10,6 +10,8 @@ i18n solution for redux/react
 - languages:
    * English
    * Russian
+   * Polish
+   * French
    * ...
 - language switcher component
 - simple key demo
