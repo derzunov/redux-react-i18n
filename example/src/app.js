@@ -42,12 +42,26 @@ store.dispatch( i18nActions.setLanguages(
 
 store.dispatch( i18nActions.setDictionaries(
     {
-        'ru-RU': {
-            'key_1': 'Первый дефолтный ключ из установленного нами словаря',
-            'key_2': ['$Count', ' ', ['штучка', 'штучки', 'штучек']] },
-        'en-US': {
-            'key_1': 'First default key from our dictionary',
-            'key_2': ['$Count', ' ', ['thing', 'things']] }
+        'ru-RU':
+            {
+                'key_1': 'Первый дефолтный ключ из установленного нами словаря',
+                'key_2': [ [ "Остался", "Осталось", "Осталось" ],  " ", "$count", " ", [ "час", "часа", "часов" ] ]
+            },
+        'en-US':
+            {
+                'key_1': 'First default key from our dictionary',
+                'key_2': ["$count", " ", [ "hour", "hours"] ]
+            },
+        'pl':
+            {
+                'key_1': 'Prosze, dwa bilety drugiej klasy do Warszawy.',
+                'key_2': [[ "Pozostała", "Pozostały", "Pozostało" ], " ", "$count", " ", [ "godzina", "godziny", "godzin" ] ]
+            },
+        'fr':
+            {
+                'key_1': 'Ayant risqué une fois-on peut rester heureux toute la vie',
+                'key_2': ["$count", " ", [ "heure", "heures"], " ", [ "restante", "restantes"] ]
+            }
     }
 ) );
 

@@ -24,8 +24,6 @@
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "react-redux": "^4.4.5",
-    "react-router": "^2.6.1",
-    "react-router-redux": "^4.0.5",
     "redux": "^3.5.2",
     "redux-form": "^6.2.0",
     "redux-react-i18n": "^0.3.5",

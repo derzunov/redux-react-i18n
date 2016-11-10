@@ -75,8 +75,7 @@
 
 	var store = (0, _redux.createStore)((0, _redux.combineReducers)(reducers));
 
-	function run() {
-
+	function render() {
 	    _reactDom2.default.render(_react2.default.createElement(
 	        _reactRedux.Provider,
 	        { store: store },
@@ -84,29 +83,9 @@
 	    ), document.getElementById('root'));
 	}
 
-	run();
+	render();
 
-	store.subscribe(run);
-
-	// TODO: Это на выпил ------
-	window.setLang = function (languageCode) {
-	    store.dispatch(_reduxReactI18n.i18nActions.setCurrent(languageCode));
-	};
-
-	window.setLangs = function (languages) {
-	    store.dispatch(_reduxReactI18n.i18nActions.setLanguages(languages));
-	};
-
-	window.setDics = function (dics) {
-	    store.dispatch(_reduxReactI18n.i18nActions.setDictionaries(dics));
-	};
-
-	window.addDic = function (languageCode, dictionary) {
-	    store.dispatch(_reduxReactI18n.i18nActions.addDictionary(languageCode, dictionary));
-	};
-
-	// / TODO: Это на выпил ------
-
+	store.subscribe(render);
 
 	store.dispatch(_reduxReactI18n.i18nActions.setLanguages([{
 	    code: 'ru-RU',
@@ -119,10 +98,20 @@
 	store.dispatch(_reduxReactI18n.i18nActions.setDictionaries({
 	    'ru-RU': {
 	        'key_1': 'Первый дефолтный ключ из установленного нами словаря',
-	        'key_2': ['$Count', ' ', ['штучка', 'штучки', 'штучек']] },
+	        'key_2': [["Остался", "Осталось", "Осталось"], " ", "$count", " ", ["час", "часа", "часов"]]
+	    },
 	    'en-US': {
 	        'key_1': 'First default key from our dictionary',
-	        'key_2': ['$Count', ' ', ['thing', 'things']] }
+	        'key_2': ["$count", " ", ["hour", "hours"]]
+	    },
+	    'pl': {
+	        'key_1': 'Prosze, dwa bilety drugiej klasy do Warszawy.',
+	        'key_2': [["Pozostała", "Pozostały", "Pozostało"], " ", "$count", " ", ["godzina", "godziny", "godzin"]]
+	    },
+	    'fr': {
+	        'key_1': 'Ayant risqué une fois-on peut rester heureux toute la vie',
+	        'key_2': ["$count", " ", ["heure", "heures"], " ", ["restante", "restantes"]]
+	    }
 	}));
 
 	store.dispatch(_reduxReactI18n.i18nActions.setCurrent('ru-RU'));
@@ -18481,6 +18470,11 @@
 	    return titles[plural];
 	};
 
+	var pluralFormTwoFormsSecond = function pluralFormTwoFormsSecond(number, titles) {
+	    var plural = number > 1 ? 1 : 0;
+	    return titles[plural];
+	};
+
 	var pluralFormThreeFormsDefault = function pluralFormThreeFormsDefault(number, titles) {
 	    var cases = [2, 0, 1, 1, 1, 2];
 	    return titles[number % 100 > 4 && number % 100 < 20 ? 2 : cases[number % 10 < 5 ? number % 10 : 5]];
@@ -18491,6 +18485,21 @@
 	    return titles[plural];
 	};
 
+	var pluralFormCs = function pluralFormCs(number, titles) {
+	    var plural = number === 1 ? 0 : number >= 2 && number <= 4 ? 1 : 2;
+	    return titles[plural];
+	};
+
+	var pluralFormPl = function pluralFormPl(number, titles) {
+	    var plural = number === 1 ? 0 : number % 10 >= 2 && number % 10 <= 4 && (number % 100 < 10 || number % 100 >= 20) ? 1 : 2;
+	    return titles[plural];
+	};
+	// Just for uniformity
+	var pluralFormOneForm = function pluralFormOneForm(number, titles) {
+	    var plural = 0;
+	    return titles[plural];
+	};
+
 	var pluralize = function pluralize(languageCode, number, titles) {
 	    switch (languageCode) {
 	        case 'ar-AR':
@@ -18498,18 +18507,39 @@
 	            return pluralFormSixFormsDefault(number, titles);
 	            break;
 
+	        case 'cs':
+	            return pluralFormCs(number, titles);
+	            break;
+
+	        case 'pl':
+	            return pluralFormPl(number, titles);
+	            break;
+
 	        case 'en-UK':
 	        case 'en-US':
 	        case 'en':
 	        case 'de-DE':
 	        case 'de':
-	        case 'fr-FR':
-	            // En: 1 thing, 2 things, 5 things
 	            return pluralFormTwoFormsDefault(number, titles);
 	            break;
-	        default:
+
+	        case 'fr-FR':
+	        case 'fr':
+	        case 'pt-BR':
+	        case 'br':
+	        case 'oc':
+	        case 'tr':
+	            return pluralFormTwoFormsSecond(number, titles);
+	            break;
+
+	        case 'ru-RU':
+	        case 'ru':
 	            // Default ru-RU for example - 1 штука, 3 штуки, 5 штук
 	            return pluralFormThreeFormsDefault(number, titles);
+	            break;
+
+	        default:
+	            return pluralFormOneForm(number, titles);
 
 	    }
 	};
@@ -33532,7 +33562,6 @@
 	            return pluralLocalize(languageCode, currentLangDictionary[key], number);
 	        }
 	    } else {
-	        //console.error( "i18n: No value for key " + key + " in dictionary " + currentLangDictionary );
 	        console.error('i18n: No value for key ' + key + ' in dictionary ' + currentLangDictionary);
 	        return '<No ' + key + ' key for ' + languageCode + '>';
 	    }
@@ -35346,6 +35375,20 @@
 	                    return switchLanguage('ru-RU');
 	                } },
 	            '\u0420\u0443\u0441\u0441\u043A\u0438\u0439'
+	        ),
+	        _react2.default.createElement(
+	            'button',
+	            { className: 'btn btn-default', disabled: currentLanguage === 'pl', type: 'button', onClick: function onClick() {
+	                    return switchLanguage('pl');
+	                } },
+	            'Polish'
+	        ),
+	        _react2.default.createElement(
+	            'button',
+	            { className: 'btn btn-default', disabled: currentLanguage === 'fr', type: 'button', onClick: function onClick() {
+	                    return switchLanguage('fr');
+	                } },
+	            'French'
 	        )
 	    );
 	};
