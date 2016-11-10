@@ -78,7 +78,7 @@ Terminal:
 npm i 'redux-react-i18n'
 ```
 
-##Your code (complete solution):
+## Full code demo ( complete solution for Redux ):
 ```javascript
 import { i18nReducer, i18nActions, Loc } from 'redux-react-i18n';
 
@@ -147,7 +147,9 @@ import { Loc } from 'redux-react-i18n';
 </p>
 ```
 
-##Your code (Just use a dumb component and you can design store/actions/reducers by yourself like you want):
+## If you don't want to use a complete solution:
+
+#### Just use a dumb component and you can design store/actions/reducers by yourself like you want
 
 ```javascript
 // Just import presentational component LocPresentational
