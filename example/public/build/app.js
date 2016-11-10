@@ -18519,6 +18519,7 @@
 	        case 'en-US':
 	        case 'en':
 	        case 'de-DE':
+	        case 'pt':
 	        case 'de':
 	            return pluralFormTwoFormsDefault(number, titles);
 	            break;
