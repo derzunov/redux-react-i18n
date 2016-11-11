@@ -1,12 +1,13 @@
 {
   "name": "redux-react-i18n",
-  "version": "0.3.19",
+  "version": "0.3.20",
   "description": "i18n solution for react/redux",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "babel src -d lib",
-    "prepublish": "npm run compile"
+    "prepublish": "npm run compile",
+    "start": "npm run compile"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
