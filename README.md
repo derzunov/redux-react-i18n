@@ -1,6 +1,8 @@
 # redux-react-i18n
 
 [![Build Status](https://travis-ci.org/derzunov/redux-react-i18n.svg?branch=master)](https://travis-ci.org/derzunov/redux-react-i18n)
+[![npm](https://img.shields.io/npm/dt/redux-react-i18n.svg)]()
+[![npm](https://img.shields.io/npm/v/redux-react-i18n.svg)]()
 
 An i18n solution for redux/react
 
