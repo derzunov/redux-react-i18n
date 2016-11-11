@@ -1,4 +1,7 @@
 # redux-react-i18n
+
+[![Build Status](https://travis-ci.org/derzunov/redux-react-i18n.svg?branch=master)](https://travis-ci.org/derzunov/redux-react-i18n)
+
 An i18n solution for redux/react
 
 ## Workers of all countries, unite!
