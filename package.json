@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile": "babel src -d lib",
     "prepublish": "npm run compile",
-    "start": "npm run compile"
+    "build": "npm run compile"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
