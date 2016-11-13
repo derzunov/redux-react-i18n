@@ -1,10 +1,10 @@
-import translate from 'translatr';
-import React from 'react';
+import translate from 'translatr'
+import React from 'react'
 
 const Loc = ({ currentLanguage, locKey, number, dictionary }) => {
     return <span>
         { translate( dictionary, currentLanguage, locKey, number ) }
-    </span>;
-};
+    </span>
+}
 
-export default Loc;
+export default Loc

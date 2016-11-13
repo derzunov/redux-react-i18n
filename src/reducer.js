@@ -4,32 +4,32 @@ const i18n = ( state, action ) => {
 
         case 'SET_CURRENT': {
 
-            let newState = Object.assign( {}, state );
-            newState.currentLanguage = action.data;
-            return newState;
+            let newState = Object.assign( {}, state )
+            newState.currentLanguage = action.data
+            return newState
         }
 
         case 'SET_LANGUAGES': {
 
-            let newState = Object.assign( {}, state );
-            newState.languages = action.data;
-            return newState;
+            let newState = Object.assign( {}, state )
+            newState.languages = action.data
+            return newState
         }
 
         case 'SET_DICTIONARIES': {
 
-            let newState = Object.assign( {}, state );
-            newState.dictionaries = action.data;
-            return newState;
+            let newState = Object.assign( {}, state )
+            newState.dictionaries = action.data
+            return newState
         }
 
         case 'ADD_DICTIONARY': {
 
             if ( action.data && action.data.languageCode && action.data.dictionary ) {
 
-                let newState = Object.assign( {}, state );
-                newState.dictionaries[ action.data.languageCode ] = action.data.dictionary;
-                return newState;
+                let newState = Object.assign( {}, state )
+                newState.dictionaries[ action.data.languageCode ] = action.data.dictionary
+                return newState
 
             } else {
                 return state
@@ -59,8 +59,8 @@ const i18n = ( state, action ) => {
                             'key_2': [ '$Count', ' ', [ 'thing','things' ] ], // 1 thing, 2 things, 153 things
                         }
                     }
-            };
+            }
     }
-};
+}
 
 export default i18n
