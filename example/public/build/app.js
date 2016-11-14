@@ -93,6 +93,15 @@
 	}, {
 	    code: 'en-US',
 	    name: 'English (USA)'
+	}, {
+	    code: 'pl',
+	    name: 'Polish'
+	}, {
+	    code: 'fr',
+	    name: 'French'
+	}, {
+	    code: 'be',
+	    name: 'Белорусский'
 	}]));
 
 	store.dispatch(_reduxReactI18n.i18nActions.setDictionaries({
@@ -115,6 +124,11 @@
 	        'key_1': 'Ayant risqué une fois-on peut rester heureux toute la vie',
 	        'key_2': ["$count", " ", ["heure", "heures"], " ", ["restante", "restantes"]],
 	        'key_3': 'Nombre: $Count'
+	    },
+	    'be': {
+	        'key_1': 'Адзін квіток да Мінска, калі ласка', //Застаўся 1 гадзіна
+	        'key_2': [["Застаўся", "Засталіся", "Засталося"], " ", "$count", " ", ["гадзіна", "гадзіны", "гадзін"]],
+	        'key_3': 'Засталося: $Count'
 	    }
 	}));
 
@@ -9187,8 +9201,9 @@
 	  }
 	  /* eslint-enable no-console */
 	  try {
-	    // This error was thrown as a convenience so that you can use this stack
-	    // to find the callsite that caused this warning to fire.
+	    // This error was thrown as a convenience so that if you enable
+	    // "break on all exceptions" in your console,
+	    // it would pause the execution at this line.
 	    throw new Error(message);
 	    /* eslint-disable no-empty */
 	  } catch (e) {}
@@ -18539,6 +18554,11 @@
 
 	        case 'ru-RU':
 	        case 'ru':
+	        case 'be':
+	        case 'bs':
+	        case 'hr':
+	        case 'sr':
+	        case 'uk':
 	            // Default ru-RU for example - 1 штука, 3 штуки, 5 штук
 	            return pluralFormThreeFormsDefault(number, titles);
 	            break;
@@ -18629,9 +18649,7 @@
 	  }
 
 	  Provider.prototype.render = function render() {
-	    var children = this.props.children;
-
-	    return _react.Children.only(children);
+	    return _react.Children.only(this.props.children);
 	  };
 
 	  return Provider;
@@ -18667,6 +18685,8 @@
 
 	var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
 
+	exports.__esModule = true;
+
 	var _extends = Object.assign || function (target) {
 	  for (var i = 1; i < arguments.length; i++) {
 	    var source = arguments[i];for (var key in source) {
@@ -18677,7 +18697,6 @@
 	  }return target;
 	};
 
-	exports.__esModule = true;
 	exports["default"] = connect;
 
 	var _react = __webpack_require__(7);
@@ -18760,12 +18779,12 @@
 	var nextVersion = 0;
 
 	function connect(mapStateToProps, mapDispatchToProps, mergeProps) {
-	  var options = arguments.length <= 3 || arguments[3] === undefined ? {} : arguments[3];
+	  var options = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
 
 	  var shouldSubscribe = Boolean(mapStateToProps);
 	  var mapState = mapStateToProps || defaultMapStateToProps;
 
-	  var mapDispatch = undefined;
+	  var mapDispatch = void 0;
 	  if (typeof mapDispatchToProps === 'function') {
 	    mapDispatch = mapDispatchToProps;
 	  } else if (!mapDispatchToProps) {
@@ -18775,10 +18794,10 @@
 	  }
 
 	  var finalMergeProps = mergeProps || defaultMergeProps;
-	  var _options$pure = options.pure;
-	  var pure = _options$pure === undefined ? true : _options$pure;
-	  var _options$withRef = options.withRef;
-	  var withRef = _options$withRef === undefined ? false : _options$withRef;
+	  var _options$pure = options.pure,
+	      pure = _options$pure === undefined ? true : _options$pure,
+	      _options$withRef = options.withRef,
+	      withRef = _options$withRef === undefined ? false : _options$withRef;
 
 	  var checkMergedEquals = pure && finalMergeProps !== defaultMergeProps;
 
@@ -18997,11 +19016,11 @@
 	      };
 
 	      Connect.prototype.render = function render() {
-	        var haveOwnPropsChanged = this.haveOwnPropsChanged;
-	        var hasStoreStateChanged = this.hasStoreStateChanged;
-	        var haveStatePropsBeenPrecalculated = this.haveStatePropsBeenPrecalculated;
-	        var statePropsPrecalculationError = this.statePropsPrecalculationError;
-	        var renderedElement = this.renderedElement;
+	        var haveOwnPropsChanged = this.haveOwnPropsChanged,
+	            hasStoreStateChanged = this.hasStoreStateChanged,
+	            haveStatePropsBeenPrecalculated = this.haveStatePropsBeenPrecalculated,
+	            statePropsPrecalculationError = this.statePropsPrecalculationError,
+	            renderedElement = this.renderedElement;
 
 	        this.haveOwnPropsChanged = false;
 	        this.hasStoreStateChanged = false;
@@ -35394,6 +35413,13 @@
 	                    return switchLanguage('fr');
 	                } },
 	            'French'
+	        ),
+	        _react2.default.createElement(
+	            'button',
+	            { className: 'btn btn-default', disabled: currentLanguage === 'be', type: 'button', onClick: function onClick() {
+	                    return switchLanguage('be');
+	                } },
+	            '\u0411\u0435\u043B\u043E\u0440\u0443\u0441\u0441\u043A\u0438\u0439'
 	        )
 	    );
 	};

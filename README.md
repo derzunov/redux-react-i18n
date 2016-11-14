@@ -40,6 +40,7 @@ An i18n solution for redux/react
    * Russian
    * Polish
    * French
+   * Belarusian
    * ...
 - language switcher component
 - simple key demo
