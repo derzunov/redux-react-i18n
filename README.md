@@ -22,6 +22,11 @@ An i18n solution for redux/react
 - Arabic ( ar-AR, ar )
 - Turkish ( tr )
 - Occitan ( oc )
+- Belarusian ( be )
+- Bosnian ( bs )
+- Croatian ( hr )
+- Serbian ( sr )
+- Ukrainian ( uk )
 - ...
 
 ## Example Demo
