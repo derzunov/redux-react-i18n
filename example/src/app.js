@@ -44,6 +44,10 @@ store.dispatch( i18nActions.setLanguages(
         {
             code: 'fr',
             name: 'French'
+        },
+        {
+            code: 'be',
+            name: 'Белорусский'
         }
     ]
 ) );
@@ -73,6 +77,12 @@ store.dispatch( i18nActions.setDictionaries(
                 'key_1': 'Ayant risqué une fois-on peut rester heureux toute la vie',
                 'key_2': ["$count", " ", [ "heure", "heures"], " ", [ "restante", "restantes"] ],
                 'key_3': 'Nombre: $Count'
+            },
+        'be':
+            {
+                'key_1': 'Адзін квіток да Мінска, калі ласка', //Застаўся 1 гадзіна
+                'key_2': [ [ "Застаўся", "Засталіся", "Засталося" ],  " ", "$count", " ", [ "гадзіна", "гадзіны", "гадзін" ] ],
+                'key_3': 'Засталося: $Count'
             }
     }
 ) );

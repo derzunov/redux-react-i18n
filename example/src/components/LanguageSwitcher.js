@@ -18,6 +18,7 @@ const LanguageSwitcher = ( {currentLanguage, switchLanguage} ) => {
             <button className="btn btn-default" disabled={ currentLanguage === 'ru-RU' } type="button" onClick={ () => switchLanguage( 'ru-RU' ) }>Русский</button>
             <button className="btn btn-default" disabled={ currentLanguage === 'pl' } type="button" onClick={ () => switchLanguage( 'pl' ) }>Polish</button>
             <button className="btn btn-default" disabled={ currentLanguage === 'fr' } type="button" onClick={ () => switchLanguage( 'fr' ) }>French</button>
+            <button className="btn btn-default" disabled={ currentLanguage === 'be' } type="button" onClick={ () => switchLanguage( 'be' ) }>Белорусский</button>
         </div>);
 };
 
