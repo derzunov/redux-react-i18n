@@ -25,8 +25,6 @@ function render () {
 
 render();
 
-store.subscribe(render);
-
 store.dispatch( i18nActions.setLanguages(
     [
         {
