@@ -86,7 +86,7 @@ translator: ( [github](https://github.com/derzunov/translator) or [npm](https://
 ### Install:
 Terminal:
 ```javascript
-npm i 'redux-react-i18n'
+npm i redux-react-i18n
 ```
 
 ## Full code demo ( complete solution for Redux ):
