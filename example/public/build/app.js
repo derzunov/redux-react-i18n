@@ -85,8 +85,6 @@
 
 	render();
 
-	store.subscribe(render);
-
 	store.dispatch(_reduxReactI18n.i18nActions.setLanguages([{
 	    code: 'ru-RU',
 	    name: 'Русский'
