@@ -4,11 +4,11 @@
 [![npm](https://img.shields.io/npm/dt/redux-react-i18n.svg)](https://www.npmjs.com/package/redux-react-i18n)
 [![npm](https://img.shields.io/npm/v/redux-react-i18n.svg)](https://www.npmjs.com/package/redux-react-i18n)
 
-An i18n solution for redux/react
+An i18n solution for Redux/React + React Native
 
 ## Workers of all countries, unite!
 
-<img src='https://raw.githubusercontent.com/derzunov/redux-react-i18n/master/i18n-logo.jpg' alt='Redux Logo' width='100%'>
+
 
 ### Supported languages list with expected codes for pluralize mechanics switching
 - Russian ( ru, ru-RU )
@@ -85,20 +85,20 @@ translator: ( [github](https://github.com/derzunov/translator) or [npm](https://
 
 ### Install:
 Terminal:
-```javascript
+```
 npm i 'redux-react-i18n'
 ```
 
 ## Full code demo ( complete solution for Redux ):
-```javascript
-import { i18nReducer, i18nActions, Loc } from 'redux-react-i18n';
+```
+import { i18nReducer, i18nActions, Loc } from 'redux-react-i18n'
 
 ...
 // reducers - is your reducers
-reducers.i18n = i18nReducer;
+reducers.i18n = i18nReducer
 ...
 
-const store = createStore( combineReducers( reducers ) );
+const store = createStore( combineReducers( reducers ) )
 
 ...
 // Set dictionaries (simpliest exapmple) -----------------------------------------------------------------------------------------------
@@ -119,7 +119,7 @@ const dictionaries = {
     /* ... */
     /* Other dictionaries */
 }
-store.dispatch( i18nActions.setDictionaries( dictionaries ) );
+store.dispatch( i18nActions.setDictionaries( dictionaries ) )
 // / Set dictionaries (simpliest exapmple) ---------------------------------------------------------------------------------------------
 
 // Set languages (simpliest exapmple) --------------------------------------------------------------------------------------------------
@@ -134,19 +134,19 @@ const languages = [
     }
     /* ... */
     /* Other languages */
-];
+]
 
-store.dispatch( i18nActions.setLanguages( languages ) );
+store.dispatch( i18nActions.setLanguages( languages ) )
 // / Set languages (simpliest exapmple) ------------------------------------------------------------------------------------------------
 
 // Set current language code (you can map this action to select component or somth like this)
-store.dispatch( i18nActions.setCurrent( 'ru-RU' ) );
+store.dispatch( i18nActions.setCurrent( 'ru-RU' ) )
 ```
 
 #### And now inside any component you can use mapped container component
 
-```javascript
-import { Loc } from 'redux-react-i18n';
+```
+import { Loc } from 'redux-react-i18n'
 ...
 
 <p>
@@ -162,9 +162,9 @@ import { Loc } from 'redux-react-i18n';
 
 #### Just use a dumb component and you can design store/actions/reducers by yourself like you want
 
-```javascript
+```
 // Just import presentational component LocPresentational
-import { LocPresentational } from 'redux-react-i18n';
+import { LocPresentational } from 'redux-react-i18n'
 ...
 ...
 ...
@@ -173,7 +173,7 @@ const mapStateToProps = ( { /*getting data from the state*/ }, ownProps ) => ({
     currentLanguage: yourCurrentLanguageFromState,
     dictionary: yourDictionaryFromState
 });
-Loc = connect( mapStateToProps )( LocPresentational );
+Loc = connect( mapStateToProps )( LocPresentational )
 ...
 ...
 ...
@@ -186,6 +186,29 @@ Loc = connect( mapStateToProps )( LocPresentational );
 </p>
 ```
 See more in src/\*.js
+
+
+## Using with React Native
+
+Just use the LocRN component instead of Loc
+
+```
+
+import { LocRN } from 'redux-react-i18n'
+...
+
+<p>
+  <LocRN locKey="key_1"/>
+</p>
+
+<p>
+  <LocRN locKey="key_2" number={7}/>
+</p>
+```
+
+And do not forget that you need 'react-native' to be installed in your project.
+I haven't added this module in dependencies, because web-projects have no need of it and react native projects already have it usually.
+
 
 ## Roadmap
 1. Demo project with how-to examples
