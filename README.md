@@ -89,7 +89,7 @@ npm i 'redux-react-i18n'
 ```
 
 ## Full code demo ( complete solution for Redux ):
-```
+```jsx
 import { i18nReducer, i18nActions, Loc } from 'redux-react-i18n'
 
 ...
@@ -144,7 +144,7 @@ store.dispatch( i18nActions.setCurrent( 'ru-RU' ) )
 
 #### And now inside any component you can use mapped container component
 
-```
+```jsx
 import { Loc } from 'redux-react-i18n'
 ...
 
@@ -161,7 +161,7 @@ import { Loc } from 'redux-react-i18n'
 
 #### Just use a dumb component and you can design store/actions/reducers by yourself like you want
 
-```
+```jsx
 // Just import presentational component LocPresentational
 import { LocPresentational } from 'redux-react-i18n'
 ...
@@ -191,7 +191,7 @@ See more in src/\*.js
 
 Just use the LocRN component instead of Loc
 
-```
+```jsx
 
 import { LocRN } from 'redux-react-i18n'
 ...
