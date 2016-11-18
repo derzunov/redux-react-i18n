@@ -210,9 +210,10 @@ I haven't added this module in dependencies, because web-projects have no need o
 
 
 ## Roadmap
-1. Demo project with how-to examples
-2. Different languages (like arabic and chinese) support demo
-3. Different improvements
-4. Pure react-component evolution
-5. Tests
-6. ...
+1. ~~Demo project with how-to examples~~ DONE
+2. ~~React Native Support~~ DONE
+3. Different languages (like arabic and chinese) support demo
+4. Different improvements
+5. ~~Pure react-component evolution~~
+6. Tests
+7. ...
