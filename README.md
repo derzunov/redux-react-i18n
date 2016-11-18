@@ -8,7 +8,7 @@ An i18n solution for Redux/React + React Native
 
 ## Workers of all countries, unite!
 
-
+![Workers of all countries, unite!](https://raw.githubusercontent.com/derzunov/redux-react-i18n/master/i18n-logo.jpg "Workers of all countries, unite!")
 
 ### Supported languages list with expected codes for pluralize mechanics switching
 - Russian ( ru, ru-RU )
@@ -76,7 +76,6 @@ gulp prod
 <span>Пришли 2 кошечки</span>
 <span>Пришло 5 кошечек</span>
 ```
-======
 
 ### What am I using:
 pluralizer: ( [github](https://github.com/derzunov/pluralizer) or [npm](https://www.npmjs.com/package/pluralizr) ) for plural forms changing
