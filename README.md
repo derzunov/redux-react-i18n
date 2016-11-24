@@ -111,7 +111,7 @@ npm i redux-react-i18n
 import { i18nReducer, i18nActions, Loc } from 'redux-react-i18n'
 
 ...
-// reducers - is your reducers
+// "reducers" contains your reducers
 reducers.i18n = i18nReducer
 ...
 
