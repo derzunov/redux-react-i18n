@@ -82,11 +82,29 @@ pluralizer: ( [github](https://github.com/derzunov/pluralizer) or [npm](https://
 
 translator: ( [github](https://github.com/derzunov/translator) or [npm](https://www.npmjs.com/package/translatr) ) for translation ([translator demo](https://derzunov.github.io/translator/))
 
-### Install:
+## Install:
 Terminal:
 ```
-npm i 'redux-react-i18n'
+npm i redux-react-i18n
 ```
+
+## What's in the box
+
+### Components:
+ - Loc ( Container Component )
+ - LocPresentational ( Presentational Component )
+ - LocRN ( Container Component for React Native )
+ - LocPresentationalRN ( Presentational Component  for React Native )
+
+### Actions
+ - setCurrent( languageCode )
+ - setLanguages( languageCode )
+ - addDictionary( languageCode, dictionary )
+ - setDictionaries( dictionaries )
+
+### Reducer
+ - i18n
+
 
 ## Full code demo ( complete solution for Redux ):
 ```jsx
@@ -142,7 +160,7 @@ store.dispatch( i18nActions.setLanguages( languages ) )
 store.dispatch( i18nActions.setCurrent( 'ru-RU' ) )
 ```
 
-#### And now inside any component you can use mapped container component
+#### And now you can use "Loc" container component
 
 ```jsx
 import { Loc } from 'redux-react-i18n'
@@ -189,7 +207,7 @@ See more in src/\*.js
 
 ## Using with React Native
 
-Just use the LocRN component instead of Loc
+Just use the "LocRN" component instead of Loc
 
 ```jsx
 
