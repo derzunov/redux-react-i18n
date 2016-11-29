@@ -4,7 +4,7 @@
 [![npm](https://img.shields.io/npm/dt/redux-react-i18n.svg)](https://www.npmjs.com/package/redux-react-i18n)
 [![npm](https://img.shields.io/npm/v/redux-react-i18n.svg)](https://www.npmjs.com/package/redux-react-i18n)
 
-An i18n solution for Redux/React
+An i18n solution with plural forms support for Redux/React
 
 ## Workers of all countries, unite!
 
