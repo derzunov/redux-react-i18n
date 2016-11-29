@@ -9,3 +9,6 @@ export { default as LocRN } from './LocRN'
 
 // Or you can just take a presentational container and map state to props by yourself
 export { default as LocPresentational } from './LocPresentational'
+
+// presentational React Native Component
+export { default as LocPresentationalRN } from './LocPresentationalRN'

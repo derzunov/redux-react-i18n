@@ -23,6 +23,7 @@
     "path": "^0.12.7",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
+    "react-native": "^0.38.0",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
     "redux-form": "^6.2.0",

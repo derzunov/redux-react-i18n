@@ -1,6 +1,6 @@
 import translate from 'translatr'
 import React from 'react'
-import { Text } from 'react-native';
+import { Text } from 'react-native'
 
 const Loc = ({ currentLanguage, locKey, number, dictionary }) => {
     return <Text>
