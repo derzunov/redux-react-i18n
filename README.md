@@ -4,7 +4,7 @@
 [![npm](https://img.shields.io/npm/dt/redux-react-i18n.svg)](https://www.npmjs.com/package/redux-react-i18n)
 [![npm](https://img.shields.io/npm/v/redux-react-i18n.svg)](https://www.npmjs.com/package/redux-react-i18n)
 
-An i18n solution for Redux/React + React Native
+An i18n solution for Redux/React
 
 ## Workers of all countries, unite!
 
@@ -207,21 +207,7 @@ See more in src/\*.js
 
 ## Using with React Native
 
-Just use the "LocRN" component instead of Loc
-
-```jsx
-
-import { LocRN } from 'redux-react-i18n'
-...
-
-<p>
-  <LocRN locKey="key_1"/>
-</p>
-
-<p>
-  <LocRN locKey="key_2" number={7}/>
-</p>
-```
+[redux-react-native-i18n](https://github.com/derzunov/redux-react-native-i18n)
 
 
 ## Roadmap
