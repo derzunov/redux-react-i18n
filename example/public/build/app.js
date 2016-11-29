@@ -7885,7 +7885,7 @@
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
-	exports.LocPresentational = exports.LocRN = exports.Loc = exports.i18nReducer = exports.i18nActions = undefined;
+	exports.LocPresentational = exports.Loc = exports.i18nReducer = exports.i18nActions = undefined;
 
 	var _reducer = __webpack_require__(380);
 
