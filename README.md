@@ -223,9 +223,6 @@ import { LocRN } from 'redux-react-i18n'
 </p>
 ```
 
-And do not forget that you need 'react-native' to be installed in your project.
-I haven't added this module in dependencies, because web-projects have no need of it and react native projects already have it usually.
-
 
 ## Roadmap
 1. ~~Demo project with how-to examples~~ DONE
