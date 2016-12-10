@@ -237,7 +237,7 @@ const mapStateToProps = ( {i18n: { currentLanguage, dictionaries }}, ownProps ) 
 
 ####Why?
 
-With <Loc locKey="your_key" ></Loc> you'll get:
+With ```<Loc locKey="your_key" ></Loc>``` you'll get:
 
 ```
 <select>
@@ -246,7 +246,7 @@ With <Loc locKey="your_key" ></Loc> you'll get:
 ```
 
 
-With translate you'll get:
+With ```translate``` you'll get:
 ```
 <select>
   <option> Translated Text </option>
