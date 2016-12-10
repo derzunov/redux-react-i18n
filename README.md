@@ -209,6 +209,53 @@ See more in src/\*.js
 
 [redux-react-native-i18n](https://github.com/derzunov/redux-react-native-i18n)
 
+## The "Span Problem"
+
+If the span tag is a big problem (in "option" tag for example), you can use **translate** from 'translatr' like this
+
+```
+import translate from 'translatr'
+...
+...
+...
+<select>
+   <option value="1">
+      { translate( dictionary, currentLanguage, key, number ) }
+   </option>
+</select>
+...
+```
+
+and just a simple example of **mapStateToProps** as a bonus:
+
+```
+const mapStateToProps = ( {i18n: { currentLanguage, dictionaries }}, ownProps ) => ({
+    currentLanguage: currentLanguage,
+    dictionary: dictionaries[ currentLanguage ]
+});
+```
+
+####Why?
+
+With <Loc locKey="your_key" ></Loc> you'll get:
+
+```
+<select>
+  <option> <span>Translated Text</span> </option>
+</select>
+```
+
+
+With translate you'll get:
+```
+<select>
+  <option> Translated Text </option>
+</select>
+```
+... but you'll have to write extra code
+
+PS You already have [translatr](https://github.com/derzunov/translator) as a dependency of redux-react-i18n in your node_modules
+
 
 ## Roadmap
 1. ~~Demo project with how-to examples~~ DONE
