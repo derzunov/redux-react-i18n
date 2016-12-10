@@ -11,3 +11,4 @@ node_modules/
 gulpfile.js
 test.js
 ./index.html
+./i18n-logo.jpg
