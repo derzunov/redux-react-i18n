@@ -2,9 +2,7 @@ import translate from 'translatr'
 import React from 'react'
 
 const Loc = ({ currentLanguage, locKey, number, dictionary }) => {
-    return <span>
-        { translate( dictionary, currentLanguage, locKey, number ) }
-    </span>
+    return React.DOM.text({}, translate( dictionary, currentLanguage, locKey, number ));
 }
 
 export default Loc
