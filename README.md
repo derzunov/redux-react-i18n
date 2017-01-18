@@ -93,8 +93,6 @@ npm i redux-react-i18n
 ### Components:
  - Loc ( Container Component )
  - LocPresentational ( Presentational Component )
- - LocRN ( Container Component for React Native )
- - LocPresentationalRN ( Presentational Component  for React Native )
 
 ### Actions
  - setCurrent( languageCode )
