@@ -12,7 +12,7 @@ const Texts = ({ count }) => {
                     <h3><Loc locKey="key_1"/></h3>
                 </p>
                 <p>
-                    <h3 style={{color: "red"}}><Loc locKey="key_2" number={count}/></h3>
+                    <h3><Loc locKey="key_2" number={count} style={{color: "red"}}/></h3>
                 </p>
                 <p>
                     <h3><Loc locKey="key_3" number={count}/></h3>
