@@ -17,10 +17,10 @@ module.exports = {
         filename: '[name].js'
     },
     module: {
-        loaders: [
+        rules: [
             {
                 exclude: /node_modules/,
-                loader: 'babel',
+                loader: 'babel-loader',
                 test: /\.js$/
             }
         ]

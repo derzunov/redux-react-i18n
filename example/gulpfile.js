@@ -46,7 +46,7 @@ gulp.task( 'prod:clean', function() {
 gulp.task( 'prod:webpack', function() {
     var combined = combiner.obj([
         gulp.src( './src/app.js' ),
-        webpackStream( prodConfig ),
+        webpackStream( prodConfig, webpack ),
         gulp.dest( relPath ( config.buildPath ) )
     ]);
 
