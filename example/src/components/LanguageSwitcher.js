@@ -1,15 +1,14 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { i18nActions } from 'redux-react-i18n';
+import React from 'react'
+import { connect } from 'react-redux'
+import { i18nActions } from 'redux-react-i18n'
 
-
-const mapStateToProps = ( {i18n: { currentLanguage }}, ownProps ) => ({
+const mapStateToProps = ( { i18n: { currentLanguage } }, ownProps ) => ( {
     currentLanguage
-});
+} )
 
-const mapDispatchToProps = ( dispatch ) => ({
+const mapDispatchToProps = ( dispatch ) => ( {
     switchLanguage: ( code ) => dispatch( i18nActions.setCurrent( code ) )
-});
+} )
 
 const LanguageSwitcher = ( {currentLanguage, switchLanguage} ) => {
     return (
@@ -19,7 +18,7 @@ const LanguageSwitcher = ( {currentLanguage, switchLanguage} ) => {
             <button className="btn btn-default" disabled={ currentLanguage === 'pl' } type="button" onClick={ () => switchLanguage( 'pl' ) }>Polish</button>
             <button className="btn btn-default" disabled={ currentLanguage === 'fr' } type="button" onClick={ () => switchLanguage( 'fr' ) }>French</button>
             <button className="btn btn-default" disabled={ currentLanguage === 'be' } type="button" onClick={ () => switchLanguage( 'be' ) }>Белорусский</button>
-        </div>);
-};
+        </div>)
+}
 
-export default connect( mapStateToProps, mapDispatchToProps )( LanguageSwitcher );
+export default connect( mapStateToProps, mapDispatchToProps )( LanguageSwitcher )
