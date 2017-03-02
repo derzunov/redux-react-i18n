@@ -5,8 +5,8 @@ module.exports.getConfig = function( type ) {
 
     var isDev = type === 'development';
 
-    var dev = require( './webpack.dev.config' );
-    var prod = require( './webpack.prod.config' );
+    var dev = require( './webpack.config.dev' );
+    var prod = require( './webpack.config.prod' );
 
     if( isDev ) {
         dev.entry[ 'app' ].unshift( 'webpack-dev-server/client?http://localhost:' + config.webpackDevServerPort + '/' );
