@@ -1,5 +1,5 @@
-import React from 'react';
-import { connect } from 'react-redux';
+import React from 'react'
+import { connect } from 'react-redux'
 import Form from './Form'
 import Texts from './Texts'
 import LanguageSwitcher from './LanguageSwitcher'
@@ -12,9 +12,9 @@ let initialValues = {
     initialValues: {
         count: 3
     }
-};
+}
 
-const App = ({ children }) => {
+const App = ( { children } ) => {
     return <div className='app'>
         <div className="container">
             <div className="row">
@@ -22,14 +22,14 @@ const App = ({ children }) => {
 
                 <LanguageSwitcher></LanguageSwitcher>
 
-                <Form {...initialValues} />
+                <Form { ...initialValues } />
                 <br/>
                 <Texts/>
-                {children}
+                { children }
             </div>
         </div>
 
-    </div>;
-};
+    </div>
+}
 
-export default connect(mapStateToProps)( App );
+export default connect( mapStateToProps )( App )
