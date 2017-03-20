@@ -62,14 +62,14 @@ gulp prod
 
 ## Short code demo
 
-####Write ( jsx ):
+#### Write ( jsx ):
 ```jsx
 <Loc locKey="your_key_1"/>
 <Loc locKey="your_key_2" number={1}/>
 <Loc locKey="your_key_2" number={2}/>
 <Loc locKey="your_key_2" number={5}/>
 ```
-####Result ( html ):
+#### Result ( html ):
 ```html
 <span>Перевод вашего первого ключа из словаря для текущего языка</span>
 <span>Пришла 1 кошечка</span>
@@ -258,8 +258,4 @@ PS You already have [translatr](https://github.com/derzunov/translator) as a dep
 ## Roadmap
 1. ~~Demo project with how-to examples~~ DONE
 2. ~~React Native Support~~ DONE
-3. Different languages (like arabic and chinese) support demo
-4. Different improvements
-5. ~~Pure react-component evolution~~
-6. Tests
-7. ...
+3. Tests
