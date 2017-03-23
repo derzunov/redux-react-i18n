@@ -253,9 +253,3 @@ With ```translate``` you'll get:
 ... but you'll have to write extra code
 
 PS You already have [translatr](https://github.com/derzunov/translator) as a dependency of redux-react-i18n in your node_modules
-
-
-## Roadmap
-1. ~~Demo project with how-to examples~~ DONE
-2. ~~React Native Support~~ DONE
-3. Tests
