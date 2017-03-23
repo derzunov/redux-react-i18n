@@ -7,7 +7,7 @@ const mapStateToProps = ( { i18n: { currentLanguage } }, ownProps ) => ( {
 } )
 
 const mapDispatchToProps = ( dispatch ) => ( {
-    switchLanguage: ( code ) => dispatch( i18nActions.setCurrent( code ) )
+    switchLanguage: ( code ) => dispatch( i18nActions.setCurrentLanguage( code ) )
 } )
 
 const LanguageSwitcher = ( {currentLanguage, switchLanguage} ) => {

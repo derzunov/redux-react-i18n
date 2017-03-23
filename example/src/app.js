@@ -85,4 +85,4 @@ store.dispatch( i18nActions.setDictionaries(
     }
 ) );
 
-store.dispatch( i18nActions.setCurrent( 'ru-RU' ) );
+store.dispatch( i18nActions.setCurrentLanguage( 'ru-RU' ) );

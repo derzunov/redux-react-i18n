@@ -95,7 +95,7 @@ npm i redux-react-i18n
  - LocPresentational ( Presentational Component )
 
 ### Actions
- - setCurrent( languageCode )
+ - setCurrentLanguage( languageCode )
  - setLanguages( languageCode )
  - addDictionary( languageCode, dictionary )
  - setDictionaries( dictionaries )
@@ -155,7 +155,7 @@ store.dispatch( i18nActions.setLanguages( languages ) )
 // / Set languages (simpliest exapmple) ------------------------------------------------------------------------------------------------
 
 // Set current language code (you can map this action to select component or somth like this)
-store.dispatch( i18nActions.setCurrent( 'ru-RU' ) )
+store.dispatch( i18nActions.setCurrentLanguage( 'ru-RU' ) )
 ```
 
 #### And now you can use "Loc" container component
