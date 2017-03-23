@@ -27,7 +27,7 @@
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
     "redux-form": "^6.2.0",
-    "redux-react-i18n": "^1.0.2",
+    "redux-react-i18n": "^1.1.0",
     "redux-thunk": "^2.0.1",
     "run-sequence": "^1.2.2",
     "stream-combiner2": "^1.1.1",

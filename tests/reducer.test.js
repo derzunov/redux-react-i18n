@@ -1,5 +1,11 @@
 import reducer from '../src/reducer'
 import initialState from '../src/initialState'
+import {
+    SET_CURRENT_LANGUAGE,
+    SET_LANGUAGES,
+    SET_DICTIONARIES,
+    ADD_DICTIONARY
+} from '../src/action-types'
 
 describe('i18n reducer', () => {
     it( 'should return the initial state', () => {
@@ -8,12 +14,12 @@ describe('i18n reducer', () => {
         ).toEqual( initialState )
     } )
 
-    it( 'should handle SET_CURRENT', () => {
+    it( 'should handle SET_CURRENT_LANGUAGE', () => {
         let newState = Object.assign( {}, initialState )
         newState.currentLanguage = 'en-US'
         expect(
             reducer( initialState, {
-                type: 'SET_CURRENT',
+                type: SET_CURRENT_LANGUAGE,
                 data: 'en-US'
             } )
         ).toEqual(
@@ -36,7 +42,7 @@ describe('i18n reducer', () => {
         ]
         expect(
             reducer( initialState, {
-                type: 'SET_LANGUAGES',
+                type: SET_LANGUAGES,
                 data: [
                     {
                         code: 'car-CAR',
@@ -68,7 +74,7 @@ describe('i18n reducer', () => {
         }
         expect(
             reducer( initialState, {
-                type: 'SET_DICTIONARIES',
+                type: SET_DICTIONARIES,
                 data: {
                     'car-CAR': {
                         'key_1': 'Первый дефолтный ключ птичьего языка для теста',
@@ -95,7 +101,7 @@ describe('i18n reducer', () => {
 
         expect(
             reducer( initialState, {
-                type: 'ADD_DICTIONARY',
+                type: ADD_DICTIONARY,
                 data: {
                     languageCode: 'new-NEW',
                     dictionary: {
