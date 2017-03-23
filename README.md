@@ -62,14 +62,14 @@ gulp prod
 
 ## Short code demo
 
-####Write ( jsx ):
+#### Write ( jsx ):
 ```jsx
 <Loc locKey="your_key_1"/>
 <Loc locKey="your_key_2" number={1}/>
 <Loc locKey="your_key_2" number={2}/>
 <Loc locKey="your_key_2" number={5}/>
 ```
-####Result ( html ):
+#### Result ( html ):
 ```html
 <span>Перевод вашего первого ключа из словаря для текущего языка</span>
 <span>Пришла 1 кошечка</span>
@@ -233,7 +233,7 @@ const mapStateToProps = ( {i18n: { currentLanguage, dictionaries }}, ownProps ) 
 });
 ```
 
-####Why?
+#### Why?
 
 With ```<Loc locKey="your_key" ></Loc>``` you'll get:
 
@@ -253,13 +253,3 @@ With ```translate``` you'll get:
 ... but you'll have to write extra code
 
 PS You already have [translatr](https://github.com/derzunov/translator) as a dependency of redux-react-i18n in your node_modules
-
-
-## Roadmap
-1. ~~Demo project with how-to examples~~ DONE
-2. ~~React Native Support~~ DONE
-3. Different languages (like arabic and chinese) support demo
-4. Different improvements
-5. ~~Pure react-component evolution~~
-6. Tests
-7. ...
