@@ -1,5 +1,5 @@
-import reducer from './reducer'
-import initialState from './initialState'
+import reducer from '../src/reducer'
+import initialState from '../src/initialState'
 
 describe('i18n reducer', () => {
     it( 'should return the initial state', () => {

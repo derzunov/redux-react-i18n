@@ -14,7 +14,9 @@
     "babel-core": "^6.18.0",
     "babel-preset-latest": "^6.22.0",
     "babel-preset-react": "^6.16.0",
-    "babel-preset-stage-0": "^6.22.0"
+    "babel-preset-stage-0": "^6.22.0",
+    "react-addons-test-utils": "^15.4.2",
+    "react-dom": "^15.4.2"
   },
   "repository": {
     "type": "git",
@@ -35,6 +37,7 @@
   },
   "homepage": "https://github.com/derzunov/redux-react-i18n#readme",
   "dependencies": {
+    "enzyme": "^2.7.1",
     "jest": "^19.0.2",
     "react": "^15.3.2",
     "react-redux": "^4.4.5",
@@ -42,6 +45,6 @@
     "translatr": "^0.1.6"
   },
   "jest": {
-    "rootDir": "./src"
+    "rootDir": "./tests"
   }
 }
