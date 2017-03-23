@@ -233,7 +233,7 @@ const mapStateToProps = ( {i18n: { currentLanguage, dictionaries }}, ownProps ) 
 });
 ```
 
-####Why?
+#### Why?
 
 With ```<Loc locKey="your_key" ></Loc>``` you'll get:
 
