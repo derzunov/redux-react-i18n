@@ -8,7 +8,7 @@ describe('i18n reducer', () => {
         ).toEqual( initialState )
     } )
 
-    it( 'should handle SET_CURRENT en-US', () => {
+    it( 'should handle SET_CURRENT', () => {
         let newState = Object.assign( {}, initialState )
         newState.currentLanguage = 'en-US'
         expect(
