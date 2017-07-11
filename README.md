@@ -76,8 +76,7 @@ gulp prod
 ```html
 <span>Перевод вашего первого ключа из словаря для текущего языка</span>
 <span>Пришла 1 кошечка</span>
-<span>Пришли 2 кошечки</span>
-<span>Пришло 5 кошечек</span>
+<span>Пришли 2 кошечки</span><span>Пришло 5 кошечек</span>
 ```
 
 ### What am I using:
@@ -119,7 +118,7 @@ reducers.i18n = i18nReducer
 const store = createStore( combineReducers( reducers ) )
 
 ...
-// Set dictionaries (simpliest exapmple) -----------------------------------------------------------------------------------------------
+// Set dictionaries (simpliest example) -----------------------------------------------------------------------------------------------
 
 // This dictionaries can be supported by Localization team without need to know somth about interface or project, 
 // and you just can fetch it to your project
@@ -138,9 +137,9 @@ const dictionaries = {
     /* Other dictionaries */
 }
 store.dispatch( i18nActions.setDictionaries( dictionaries ) )
-// / Set dictionaries (simpliest exapmple) ---------------------------------------------------------------------------------------------
+// / Set dictionaries (simpliest example) ---------------------------------------------------------------------------------------------
 
-// Set languages (simpliest exapmple) --------------------------------------------------------------------------------------------------
+// Set languages (simpliest example) --------------------------------------------------------------------------------------------------
 const languages = [
     {
         code: 'ru-RU',
@@ -155,7 +154,7 @@ const languages = [
 ]
 
 store.dispatch( i18nActions.setLanguages( languages ) )
-// / Set languages (simpliest exapmple) ------------------------------------------------------------------------------------------------
+// / Set languages (simpliest example) ------------------------------------------------------------------------------------------------
 
 // Set current language code (you can map this action to select component or somth like this)
 store.dispatch( i18nActions.setCurrentLanguage( 'ru-RU' ) )
