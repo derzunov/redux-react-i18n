@@ -119,7 +119,7 @@ reducers.i18n = i18nReducer
 const store = createStore( combineReducers( reducers ) )
 
 ...
-// Set dictionaries (simpliest exapmple) -----------------------------------------------------------------------------------------------
+// Set dictionaries (simpliest example) -----------------------------------------------------------------------------------------------
 
 // This dictionaries can be supported by Localization team without need to know somth about interface or project, 
 // and you just can fetch it to your project
