@@ -11,19 +11,7 @@ reducers.i18n = i18nReducer;
 
 import App from './components/App';
 
-
 const store = createStore( combineReducers( reducers ) );
-
-function render () {
-    ReactDOM.render(
-        <Provider store={store}>
-            <App></App>
-        </Provider>
-        ,
-        document.getElementById('root'));
-}
-
-render();
 
 store.dispatch( i18nActions.setLanguages(
     [
@@ -86,3 +74,14 @@ store.dispatch( i18nActions.setDictionaries(
 ) );
 
 store.dispatch( i18nActions.setCurrentLanguage( 'ru-RU' ) );
+
+function render () {
+    ReactDOM.render(
+        <Provider store={store}>
+            <App></App>
+        </Provider>
+        ,
+        document.getElementById('root'));
+}
+
+render();
