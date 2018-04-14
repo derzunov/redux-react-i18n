@@ -1,6 +1,6 @@
 {
   "name": "redux-react-i18n",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "i18n solution for react/redux",
   "main": "lib/index.js",
   "scripts": {
@@ -10,13 +10,17 @@
     "build": "npm run compile"
   },
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-core": "^6.18.0",
-    "babel-preset-latest": "^6.22.0",
-    "babel-preset-react": "^6.16.0",
-    "babel-preset-stage-0": "^6.22.0",
-    "react-addons-test-utils": "^15.4.2",
-    "react-dom": "^15.4.2"
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.3",
+    "react": ">=16.0.0",
+    "react-dom": ">=16.0.0"
   },
   "repository": {
     "type": "git",
@@ -36,15 +40,17 @@
     "url": "https://github.com/derzunov/redux-react-i18n/issues"
   },
   "homepage": "https://github.com/derzunov/redux-react-i18n#readme",
+  "peerDependencies": {
+    "react-dom": ">=16.0.0",
+    "react-redux": ">=5.0.0",
+    "redux": ">=3.0.0",
+    "react": ">=16.0.0"
+  },
   "dependencies": {
-    "enzyme": "^2.7.1",
-    "jest": "^19.0.2",
-    "react": "^15.3.2",
-    "react-redux": "^4.4.5",
-    "redux": "^3.6.0",
-    "translatr": "^0.1.6"
+    "translatr": ">=1.0.0"
   },
   "jest": {
-    "rootDir": "./tests"
+    "rootDir": "./tests",
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js"
   }
 }

@@ -36,7 +36,7 @@ describe('<LocPresentational/> ru-RU', () => {
                 key_4: [ '$Count', ' ', [ 'тестик', 'тестика', 'тестиков' ] ]
             }
         }
-        const wrapper = shallow( <LocPresentational number="1937" { ...props }/> )
-        expect( wrapper.find( 'span' ).text()).toEqual( '1937 тестиков' )
+        const wrapper = shallow( <LocPresentational number="777" { ...props }/> )
+        expect( wrapper.find( 'span' ).text()).toEqual( '777 тестиков' )
     })
 })
