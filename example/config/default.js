@@ -2,5 +2,5 @@ module.exports = {
     buildPath: "/public/build/",
     publicPath: "/build/",
     wdsContentBasePath: "/public/",
-    webpackDevServerPort: 1937
+    webpackDevServerPort: 1703
 };
