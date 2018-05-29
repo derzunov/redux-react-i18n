@@ -121,18 +121,26 @@ const store = createStore( combineReducers( reducers ) )
 ...
 // Set dictionaries (simpliest example) -----------------------------------------------------------------------------------------------
 
-// This dictionaries can be supported by Localization team without need to know somth about interface or project, 
+// This dictionaries can be supported by Localization team without need to know somth about interface or project,
 // and you just can fetch it to your project
 const dictionaries = {
     'ru-RU': {
         'key_1': 'Первый дефолтный ключ',
         'key_2': [ '$Count', ' ', ['штучка','штучки','штучек']], // 1 штучка, 3 штучки, пять штучек
+        'key_3': {
+            'nested_1': 'Первый вложенный ключ',
+            'nested_2': 'Второй вложенный ключ',
+        },
         /* ... */
         /* Other keys */
     },
     'en-US': {
         'key_1': 'First default key',
         'key_2': [ '$Count', ' ', ['thing','things']], // 1 thing, 2 things, 153 things
+        'key_3': {
+            'nested_1': 'First nested key',
+            'nested_2': 'Second nested key',
+        },
     }
     /* ... */
     /* Other dictionaries */
@@ -173,6 +181,13 @@ import { Loc } from 'redux-react-i18n'
 
 <p>
   <Loc locKey="key_2" number={7}/> // => 7 штучек
+</p>
+
+<p>
+  <Loc locKey="key_3.nested_1"/> // => Первый вложенный ключ
+</p>
+<p>
+  <Loc locKey="key_3.nested_2"/> // => Второй вложенный ключ
 </p>
 ```
 

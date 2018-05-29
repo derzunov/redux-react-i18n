@@ -17,6 +17,13 @@ const Texts = ( { count } ) => {
                 <div>
                     <h3><Loc locKey="key_3" number={count}/></h3>
                 </div>
+
+                <div>
+                    <h3><Loc locKey="key_4.nested_1"/></h3>
+                </div>
+                <div>
+                    <h3><Loc locKey="key_4.nested_2"/></h3>
+                </div>
     </div>
 }
 
