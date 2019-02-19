@@ -1,6 +1,6 @@
 {
   "name": "redux-react-i18n",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "i18n solution for react/redux",
   "main": "lib/index.js",
   "scripts": {
@@ -17,6 +17,7 @@
     "@babel/polyfill": "^7.2.5",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
+    "@babel/runtime": "^7.3.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.4.2",
     "enzyme": "^3.3.0",
@@ -54,6 +55,7 @@
   },
   "jest": {
     "rootDir": "./tests",
-    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js"
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js",
+    "testURL": "http://localhost/"
   }
 }
