@@ -3979,9 +3979,9 @@ redux-form@^7.3.0:
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-redux-react-i18n@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/redux-react-i18n/-/redux-react-i18n-2.0.0.tgz#006efe860de4e2386c5fcb7fa04000f391d824e9"
+redux-react-i18n@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/redux-react-i18n/-/redux-react-i18n-2.0.1.tgz#534dc11d05b29409cfcb2817c58d4be3b2ca30cf"
   dependencies:
     translatr ">=2.1.0"
 
@@ -5066,8 +5066,8 @@ wrappy@1:
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
 
 y18n@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.1.tgz#6d15fba884c08679c0d77e88e7759e811e07fa41"
+  version "3.2.2"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-3.2.2.tgz#85c901bd6470ce71fc4bb723ad209b70f7f28696"
 
 yallist@^3.0.0, yallist@^3.0.2:
   version "3.0.3"
