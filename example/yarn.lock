@@ -2838,8 +2838,8 @@ locate-path@^3.0.0:
     path-exists "^3.0.0"
 
 lodash-es@^4.17.10, lodash-es@^4.2.1:
-  version "4.17.11"
-  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.11.tgz#145ab4a7ac5c5e52a3531fb4f310255a152b4be0"
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.21.tgz#43e626c46e6591b7750beb2b50117390c609e3ee"
 
 lodash._basecopy@^3.0.0:
   version "3.0.1"
@@ -3979,9 +3979,9 @@ redux-form@^7.3.0:
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-redux-react-i18n@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/redux-react-i18n/-/redux-react-i18n-2.0.0.tgz#006efe860de4e2386c5fcb7fa04000f391d824e9"
+redux-react-i18n@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/redux-react-i18n/-/redux-react-i18n-2.0.1.tgz#534dc11d05b29409cfcb2817c58d4be3b2ca30cf"
   dependencies:
     translatr ">=2.1.0"
 
