@@ -1390,8 +1390,8 @@ decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
   resolved "https://registry.yarnpkg.com/decamelize/-/decamelize-1.2.0.tgz#f6534d15148269b20352e7bee26f501f9a191290"
 
 decode-uri-component@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.2.tgz#e69dbe25d37941171dd540e024c444cd5188e1e9"
 
 deep-equal@^1.0.1:
   version "1.0.1"
@@ -3979,9 +3979,9 @@ redux-form@^7.3.0:
     prop-types "^15.6.1"
     react-lifecycles-compat "^3.0.4"
 
-redux-react-i18n@2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/redux-react-i18n/-/redux-react-i18n-2.0.0.tgz#006efe860de4e2386c5fcb7fa04000f391d824e9"
+redux-react-i18n@2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/redux-react-i18n/-/redux-react-i18n-2.0.1.tgz#534dc11d05b29409cfcb2817c58d4be3b2ca30cf"
   dependencies:
     translatr ">=2.1.0"
 
